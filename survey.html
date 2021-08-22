@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Customer Experience Survey">
+    <title>Survey</title>
+</head>
+<body>
+<form >
+    <fieldset> 
+        <legend>Customer Experience Survey</legend>
+        <label for="storeNumber">Store Number</label> 
+        <select id="storeNumber">
+            <option value="storeNumber" hidden> Please select a store</option>
+            <option value="3109">3109</option>
+            <option value="3109">2421</option>
+            <option value="3109">5357</option>
+        </select>
+            <fieldset>
+                <legend> When you visited:</legend>
+                <label for="dateVisited">Date Visited</label>
+                <input type="date" name="dateVisited" id="dateVisited">
+                <br>
+                <label for="time">Time</label>
+                <input type="time" name="time" id="time">
+            </fieldset>
+            <label for="fullName">Full Name:</label>
+            <input type="text" name="name" id="name" placeholder="Name">
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" placeholder="Email">
+            <fieldset>
+                <legend>Gender</legend>
+                <input type="radio" name="gender" id="female" checked>
+                <label for="female">Female</label>
+                <br>
+                <input type="radio" name="gender" id="male">
+                <label for="male">Male</label>
+                <br>
+                <input type="radio" name="gender" id="no">
+                <label for="prefer not to disclose">Prefer not to disclose</label>
+            </fieldset>
+            <label for="experience">Tell us about your experience:</label>
+            <br>
+            <textarea name="feedback" id="feedback" cols="20" rows="2"></textarea>
+            <br>
+<label for="timesVisited">Times visited in the last month:</label>
+<br>
+<input type="number" name="timesVisited" id="timesVisited" min="1" max="30">
+<br>
+<input type="checkbox" name="contactAgreement" id="contactAgreement">
+<label for="contactAgreement">Please check the box if you are willing to be contacted about your experience</label>
+<br>
+<label for="password">Password</label>
+<input type="password" name="password" id="password"placeholder="password" minlength="5" maxlength="10">
+<br>
+<input type="reset" value="Reset">
+<br>
+<input type="submit" value="Submit">
+    </fieldset>
+</form>
+</body>
+</html>
